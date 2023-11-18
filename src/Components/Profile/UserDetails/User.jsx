@@ -3,7 +3,7 @@ import Styles from "./User.module.css";
 import { CiHeart, CiStar } from "react-icons/ci";
 import { AiOutlineEye, AiOutlineLike } from "react-icons/ai";
 import { MdDiamond, MdOutlineVerified } from "react-icons/md";
-import defaultPic from "../../../assets/profilePic.webp"
+import defaultProfile from "../../../assets/defaultProfile.png"
 
 export default function User({ userDetails }) {
   
@@ -21,7 +21,7 @@ export default function User({ userDetails }) {
         <img src={userDetails.backGroungImage} className={Styles.BImg} />
       </div>
       <div className={Styles.UserContent}>
-        <img src={userDetails.avatar || defaultPic} className={Styles.Avatar} />
+        <img src={userDetails.avatar || defaultProfile} className={Styles.Avatar} />
         <div className={Styles.UserDetails}>
           <div className={Styles.UserName}>
             <h2>{userDetails.username}</h2>
