@@ -1,0 +1,25 @@
+.Container {
+   width: 80%;
+   border-inline: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.Posts {
+    margin-top: 3em;
+}
+
+.PostsLen {
+    padding: min(1rem, 5vw) min(1.5rem, 7vw); 
+    color: blue;  
+}
+
+
+  
+
+  
+
+@media (max-width : 960px) {
+    .Container {
+        width: 100%;
+        border: none;
+    }
+}
