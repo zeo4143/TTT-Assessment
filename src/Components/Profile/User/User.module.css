@@ -13,6 +13,7 @@
   font-size: clamp(0.75em, 1.25em, 1.5vw);
   margin-inline: min(3rem, 10vw);
   display: flex;
+  gap: 1.25em;
 }
 
 .Avatar {

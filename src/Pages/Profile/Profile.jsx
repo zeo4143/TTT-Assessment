@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./Profile.module.css";
 import axios from "axios";
-import User from "../../Components/Profile/UserDetails/User";
+import User from "../../Components/Profile/User/User";
 import Posts from "../../Components/Profile/Posts/Posts";
 
 export default function Profile() {
