@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --primary-color : #808080;
-  --secondary-color :  #ffc23e ;
+  --primary-color: #808080;
+  --secondary-color: #ffc23e;
 }
 
 body {
@@ -27,10 +27,8 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
-  color: #64C5D9;
-
+  color: #64c5d9;
 }
-
 
 button {
   padding: 0.7em;
@@ -40,6 +38,3 @@ button {
   border: none;
   cursor: pointer;
 }
-
-
-

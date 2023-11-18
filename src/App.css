@@ -1,39 +1,42 @@
 .app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
 /* ICONS */
-.Stars, .Likes, .Views, .Hearts,.Diamond, .Verified {
-    padding: 2px;
-    border-radius: 50%;
-    color: white;
+.Stars,
+.Likes,
+.Views,
+.Hearts,
+.Diamond,
+.Verified {
+  padding: 2px;
+  border-radius: 50%;
+  color: white;
 }
 
 .Stars {
-    background-color: black;
+  background-color: black;
 }
 
 .Likes {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 .Views {
-    background-color:grey;
+  background-color: grey;
 }
 .Hearts {
-    background-color: #bb2d5b;
+  background-color: #bb2d5b;
 }
 
 .Diamond {
-    background-color: #3e3c6c;
-    font-size: 1.25em;
+  background-color: #3e3c6c;
+  font-size: 1.25em;
 }
 
 .Verified {
-    background-color: #65eba1;
-    color: black;
-    font-size: 1.25em;
+  background-color: #65eba1;
+  color: black;
+  font-size: 1.25em;
 }

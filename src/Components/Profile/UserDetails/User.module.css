@@ -1,107 +1,97 @@
-
 .BackGroundImage {
-    width: 100%;
-    height: min(50vw, 40vh);
-    background-color: var(--primary-color);
+  width: 100%;
+  height: min(50vw, 40vh);
+  background-color: var(--primary-color);
 }
 
 .BImg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .UserContent {
-    font-size: clamp(0.75em, 1.25em, 1.5vw);
-    margin-inline: min(3rem, 10vw);
-    display: flex;
+  font-size: clamp(0.75em, 1.25em, 1.5vw);
+  margin-inline: min(3rem, 10vw);
+  display: flex;
 }
 
 .Avatar {
-    margin-top: -2em;
-    width: 10em;
-    height: 10em;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
+  margin-top: -2em;
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
 }
 
 .UserDetails {
-    margin-inline: 1.5em
+  margin-inline: 1.5em;
 }
 
 .UserName {
-    margin-block: 1em;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  margin-block: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .UserName > h2 {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-
 .UserNetwork {
-    display: flex;
-    gap: 1em;
-    color: var(--primary-color);
+  display: flex;
+  gap: 1em;
+  color: var(--primary-color);
 }
 
 .NetworkCount {
-    padding: 0.2em 1em;
-    font-weight: bold;
-    border: 2px solid var(--primary-color);
-    border-radius: 0.5rem;
+  padding: 0.2em 1em;
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
 }
-
-
 
 .UserDescription {
-    margin-inline: min(3rem, 10vw);
-    margin-block: 1.5rem;
+  margin-inline: min(3rem, 10vw);
+  margin-block: 1.5rem;
 }
-
 
 .Bio {
-    margin-block: 0.5rem;
-    color: var(--primary-color);
+  margin-block: 0.5rem;
+  color: var(--primary-color);
 }
 
-.Badges, .BadgeIcons {
-    display: flex;
-    align-items: center;
+.Badges,
+.BadgeIcons {
+  display: flex;
+  align-items: center;
 }
 
 .Badges {
-    margin: 0.5em 0.25em;
-    gap: 0.75em;
+  margin: 0.5em 0.25em;
+  gap: 0.75em;
 }
 
 .BadgeIcons {
-    gap: 0.25em;
+  gap: 0.25em;
 }
 
-
-
-
 @media (max-width: 960px) {
-    
 }
 
 @media (max-width: 600px) {
-    .Container {
-        height: auto;
-    }
+  .Container {
+    height: auto;
+  }
 
-    .Avatar {
-        width: 8em;
-        height: 8em;
-    }
+  .Avatar {
+    width: 8em;
+    height: 8em;
+  }
 
-    .UserName {
-        margin-block: 0.5em;
-    }
+  .UserName {
+    margin-block: 0.5em;
+  }
 }
-
-

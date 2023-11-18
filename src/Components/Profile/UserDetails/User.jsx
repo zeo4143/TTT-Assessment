@@ -3,28 +3,30 @@ import Styles from "./User.module.css";
 import { CiHeart, CiStar } from "react-icons/ci";
 import { AiOutlineEye, AiOutlineLike } from "react-icons/ai";
 import { MdDiamond, MdOutlineVerified } from "react-icons/md";
-import defaultProfile from "../../../../public/defaultProfile.png"
+import defaultProfile from "../../../../public/images/defaultProfile.png";
 
 export default function User({ userDetails }) {
-  
   //Converting count IN Ks & Ms
   const count = (value) =>
     value >= 1000000
       ? `${(value / 1000000).toFixed(1)}M`
       : value >= 10000
       ? `${(value / 1000).toFixed(1)}K`
-      : value.toString();
+      : value?.toString();
 
   return (
     <>
       <div className={Styles.BackGroundImage}>
-        <img src={userDetails.backGroungImage} className={Styles.BImg} />
+        <img src={userDetails?.backGroungImage} className={Styles.BImg} />
       </div>
       <div className={Styles.UserContent}>
-        <img src={userDetails.avatar || defaultProfile} className={Styles.Avatar} />
-        <div className={Styles.UserDetails}>
+        <img
+          src={userDetails?.avatar || defaultProfile}
+          className={Styles.Avatar}
+        />
+        <div className={Styles.userDetails}>
           <div className={Styles.UserName}>
-            <h2>{userDetails.username}</h2>
+            <h2>{userDetails?.username}</h2>
             <span>
               <MdDiamond className="Diamond" />
             </span>
@@ -35,13 +37,13 @@ export default function User({ userDetails }) {
           <div className={Styles.UserNetwork}>
             <center>
               <p className={Styles.NetworkCount}>
-                {count(userDetails.followers)}
+                {count(userDetails?.followers)}
               </p>
               <small>Follwers</small>
             </center>
             <center>
               <p className={Styles.NetworkCount}>
-                {count(userDetails.following)}
+                {count(userDetails?.following)}
               </p>
               <small>Follwing</small>
             </center>
@@ -49,30 +51,30 @@ export default function User({ userDetails }) {
         </div>
       </div>
       <div className={Styles.UserDescription}>
-        {userDetails.bio && <p className={Styles.Bio}>{userDetails.bio}</p>}
-        {userDetails.website && (
-          <a href={userDetails.website} target="_blank">
-            <span>{userDetails.website}</span>
+        {userDetails?.bio && <p className={Styles.Bio}>{userDetails?.bio}</p>}
+        {userDetails?.website && (
+          <a href={userDetails?.website} target="_blank">
+            <span>{userDetails?.website}</span>
           </a>
         )}
         <div className={Styles.Badges}>
           <div className={Styles.BadgeIcons}>
             <CiStar className="Stars" />
-            <small>{count(userDetails.highestStars)}</small>
+            <small>{count(userDetails?.highestStars)}</small>
           </div>
           <div className={Styles.BadgeIcons}>
             <p>
               <AiOutlineLike className="Likes" />
             </p>
-            <small>{count(userDetails.highestLikes)}</small>
+            <small>{count(userDetails?.highestLikes)}</small>
           </div>
           <div className={Styles.BadgeIcons}>
             <AiOutlineEye className="Views" />
-            <small>{count(userDetails.highestViews)}</small>
+            <small>{count(userDetails?.highestViews)}</small>
           </div>
           <div className={Styles.BadgeIcons}>
             <CiHeart className="Hearts" />
-            <small>{count(userDetails.highestHearts)}</small>
+            <small>{count(userDetails?.highestHearts)}</small>
           </div>
         </div>
       </div>

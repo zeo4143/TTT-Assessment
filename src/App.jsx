@@ -1,13 +1,13 @@
-import React from 'react'
-import "./App.css"
-import ProfileMain from './Components/Profile/ProfileMain/ProfileMain'
-import Navbar from './Components/Navbar/Navbar'
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Profile from "./Pages/Profile/Profile";
 
 export default function App() {
   return (
-    <div className='app'> 
-      <Navbar/>
-      <ProfileMain/>
+    <div className="app">
+      <Navbar />
+      <Profile />
     </div>
-  )
+  );
 }

@@ -1,75 +1,78 @@
 .Container {
-    border-bottom: 2px solid rgba(128, 128, 128, 0.1) ;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.1);
 }
 
 .Body {
-    margin: min(2rem, 7vw);
+  margin: min(2rem, 7vw);
 }
 
-.Header, .Content, .Footer {
-    margin-block: 1.5rem;
+.Header,
+.Content,
+.Footer {
+  margin-block: 1.5rem;
 }
 
-.Header, .Footer, .PostedBy, .PostTimingAndViews {
-    display: flex;
-    align-items: center;
+.Header,
+.Footer,
+.PostedBy,
+.PostTimingAndViews {
+  display: flex;
+  align-items: center;
 }
 
-.Header, .Footer {
-    justify-content: space-between;
-    
+.Header,
+.Footer {
+  justify-content: space-between;
 }
 
 .Header > span > svg {
-    padding: 4px;
-    font-size: 1.25em;
+  padding: 4px;
+  font-size: 1.25em;
 }
 
 .Title {
-    margin-right: 2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  margin-right: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Content {
-    color: var(--primary-color);
-    line-height: 1.5em;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  color: var(--primary-color);
+  line-height: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .Footer {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .PostedBy {
-    font-weight: bold;
-    gap: 0.5em;
+  font-weight: bold;
+  gap: 0.5em;
 }
 
 .PostType {
-    color: #00c1d4;
+  color: #00c1d4;
 }
 
 .Gap {
-    margin: 0.5em;
-    border: 2px solid rgb(128, 128, 128);
-    border-radius: 50%;
+  margin: 0.5em;
+  border: 2px solid rgb(128, 128, 128);
+  border-radius: 50%;
 }
 
-@media (max-height : 600px) {
-    .Footer {
-        font-size: 0.75em;
-    }
+@media (max-height: 600px) {
+  .Footer {
+    font-size: 0.75em;
+  }
 }
 
-@media (max-width : 600px) {
-    .Footer {
-        font-size: 0.5em;
-    }
+@media (max-width: 600px) {
+  .Footer {
+    font-size: 0.5em;
+  }
 }
-
-
