@@ -3,9 +3,9 @@ import Styles from "./Profile.module.css";
 import axios from "axios";
 import User from "../../Components/Profile/User/User";
 import Posts from "../../Components/Profile/Posts/Posts";
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 
 export default function Profile() {
-  
   const [data, setData] = useState(null);
 
   const fetchData = async () => {
@@ -26,10 +26,20 @@ export default function Profile() {
     <div className={Styles.Container}>
       <User userDetails={data?.user} />
       <div className={Styles.Posts}>
-        <h1 className={Styles.PostsLen}>{data?.posts.length} POSTS</h1>
-        {data?.posts.map((post) => (
-          <Posts postDetails={post} key={post.id} />
-        ))}
+        <Tabs variant="enclosed-colored" colorScheme="gray">
+          <TabList>
+            <Tab className={Styles.PostsLen}>
+              <h1>{data?.posts.length} POSTS</h1>
+            </Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              {data?.posts.map((post) => (
+                <Posts postDetails={post} key={post.id} />
+              ))}
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </div>
     </div>
   );

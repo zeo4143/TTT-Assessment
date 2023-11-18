@@ -10,6 +10,7 @@
     - written a **Asynchrounous** function to fetch data using **Axios** from **public/rawData/data.json** file
     - After fetching Stored the data in a state.
     - pass this data to **User** & **Posts** components which are located at **Compnents/Profile** directory.
+    - used **chakra-ui/react** for border.
 
 3. ### User - Component
     - In this Component data is getting from props and rendering safely by using **?.** and with Conditional Operator.
