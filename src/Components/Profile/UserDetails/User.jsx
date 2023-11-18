@@ -3,7 +3,7 @@ import Styles from "./User.module.css";
 import { CiHeart, CiStar } from "react-icons/ci";
 import { AiOutlineEye, AiOutlineLike } from "react-icons/ai";
 import { MdDiamond, MdOutlineVerified } from "react-icons/md";
-import defaultProfile from "../../../assets/defaultProfile.png"
+import defaultProfile from "../../../../public/defaultProfile.png"
 
 export default function User({ userDetails }) {
   
