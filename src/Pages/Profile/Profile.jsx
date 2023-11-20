@@ -28,7 +28,7 @@ export default function Profile() {
       <div className={Styles.Posts}>
         <Tabs variant="enclosed-colored" colorScheme="gray">
           <TabList>
-            <Tab className={Styles.PostsLen}>
+            <Tab fontWeight="bold" color="#4a96e5" padding="min(1rem, 2vw) min(1.5rem, 5vw)">
               <h1>{data?.posts.length} POSTS</h1>
             </Tab>
           </TabList>

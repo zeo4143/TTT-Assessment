@@ -54,7 +54,7 @@ export default function User({ userDetails }) {
         {userDetails?.bio && <p className={Styles.Bio}>{userDetails?.bio}</p>}
         {userDetails?.website && (
           <a href={userDetails?.website} target="_blank">
-            <span>{userDetails?.website}</span>
+            <span className={Styles.Website}>{userDetails?.website}</span>
           </a>
         )}
         <div className={Styles.Badges}>

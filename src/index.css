@@ -20,21 +20,8 @@ h1 {
   font-size: min(5vw, 1.25rem);
 }
 
-a {
-  display: inline-block;
-  max-width: 80%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  color: #64c5d9;
+h2, h3 {
+  font-weight: bold;
 }
 
-button {
-  padding: 0.7em;
-  background-color: var(--secondary-color);
-  font-weight: bold;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-}
+

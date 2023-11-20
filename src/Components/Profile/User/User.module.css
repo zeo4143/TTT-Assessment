@@ -64,6 +64,16 @@
   color: var(--primary-color);
 }
 
+.Website {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #64c5d9;
+}
+
 .Badges,
 .BadgeIcons {
   display: flex;

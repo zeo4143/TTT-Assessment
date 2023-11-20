@@ -41,7 +41,7 @@
   color: var(--primary-color);
   line-height: 1.5em;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -73,6 +73,6 @@
 
 @media (max-width: 600px) {
   .Footer {
-    font-size: 0.5em;
+    font-size: 0.45em;
   }
 }
