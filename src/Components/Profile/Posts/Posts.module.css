@@ -46,6 +46,10 @@
   overflow: hidden;
 }
 
+.Like {
+  font-size: 1.25em;
+}
+
 .Footer {
   color: var(--primary-color);
 }

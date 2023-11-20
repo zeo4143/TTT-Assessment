@@ -26,7 +26,7 @@ export default function Profile() {
     <div className={Styles.Container}>
       <User userDetails={data?.user} />
       <div className={Styles.Posts}>
-        <Tabs variant="enclosed-colored" colorScheme="gray">
+        <Tabs variant="enclosed" colorScheme="gray">
           <TabList>
             <Tab fontWeight="bold" color="#4a96e5" padding="min(1rem, 2vw) min(1.5rem, 5vw)">
               <h1>{data?.posts.length} POSTS</h1>

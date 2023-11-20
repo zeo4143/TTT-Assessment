@@ -31,9 +31,9 @@ export default function Posts({ postDetails }) {
       <div className={Styles.Body}>
         <div className={Styles.Header}>
           <h3 className={Styles.Title}>{postDetails?.title}</h3>
-          <span>
+          <button className={Styles.Like}>
             <AiOutlineLike className="Likes" />
-          </span>
+          </button>
         </div>
         <div className={Styles.Content}>
           <p>{postDetails?.content}</p>
