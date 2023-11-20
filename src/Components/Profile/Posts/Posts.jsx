@@ -46,7 +46,7 @@ export default function Posts({ postDetails }) {
           <div className={Styles.PostTimingAndViews}>
             <small>{date(postDetails?.timestamp)}</small>
             <span className={Styles.Gap}></span>
-            <small>2 mins Read</small>
+            <small>{postDetails?.readingTime} Read</small>
             <span className={Styles.Gap}></span>
             <small>{views(postDetails?.views)} Views</small>
           </div>
