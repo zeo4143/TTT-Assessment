@@ -8,8 +8,6 @@ export default function PostSingle() {
   const location = useLocation();
   const { data } = location.state;
 
-  console.log(data);
-
   return (
     <>
       <nav className={Styles.Navbar}>

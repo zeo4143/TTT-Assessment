@@ -67,7 +67,7 @@
 
 .Gap {
   margin: 0.5em;
-  border: 2px solid rgb(128, 128, 128);
+  border: 0.125em solid rgb(128, 128, 128);
   border-radius: 50%;
 }
 
