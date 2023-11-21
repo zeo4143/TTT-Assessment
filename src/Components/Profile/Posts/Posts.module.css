@@ -3,7 +3,7 @@
 }
 
 .Body {
-  margin: min(2rem, 7vw);
+  margin: min(1rem, 2vw) min(1.5rem, 5vw);
 }
 
 .Header,
@@ -37,7 +37,7 @@
   text-overflow: ellipsis;
 }
 
-.Content {
+.ContentText {
   color: var(--primary-color);
   line-height: 1.5em;
   display: -webkit-box;
@@ -52,9 +52,11 @@
 
 .Footer {
   color: var(--primary-color);
+  flex-wrap: wrap;
 }
 
 .PostedBy {
+  margin-right: 1rem;
   font-weight: bold;
   gap: 0.5em;
 }
@@ -70,13 +72,19 @@
 }
 
 @media (max-height: 600px) {
+  .ContentText {
+    -webkit-line-clamp: 3;
+  }
   .Footer {
     font-size: 0.75em;
   }
 }
 
 @media (max-width: 600px) {
+  .ContentText {
+    -webkit-line-clamp: 3;
+  }
   .Footer {
-    font-size: 0.45em;
+    font-size: 0.5em;
   }
 }

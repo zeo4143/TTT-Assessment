@@ -23,7 +23,7 @@ The Vite + React application availble/deployed at
         ```
     - After fetching, Stored the data in a state.
     - pass this data to [**User**](https://github.com/zeo4143/TTT-Assessment/blob/master/src/Components/Profile/User/User.jsx) & [**Posts**](https://github.com/zeo4143/TTT-Assessment/blob/master/src/Components/Profile/Posts/Posts.jsx) components which are located at **Compnents/Profile** directory.
-    - used [**chakra-ui/react**](https://chakra-ui.com/) for border. 
+    - ~~used [**chakra-ui/react**](https://chakra-ui.com/) for border.~~(Removed).
     
 
 3. ### User - Component

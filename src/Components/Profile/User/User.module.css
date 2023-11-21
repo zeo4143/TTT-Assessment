@@ -51,7 +51,7 @@
   padding: 0.2em 1em;
   font-weight: bold;
   border: 2px solid var(--primary-color);
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
 }
 
 .UserDescription {
@@ -62,16 +62,6 @@
 .Bio {
   margin-block: 0.5rem;
   color: var(--primary-color);
-}
-
-.Website {
-  display: inline-block;
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  color: #64c5d9;
 }
 
 .Badges,

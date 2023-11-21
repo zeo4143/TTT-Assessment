@@ -1,15 +1,28 @@
-.Container {
-  width: 80%;
-  border-inline: 2px solid rgba(128, 128, 128, 0.2);
-}
-
 .Posts {
   margin-top: 3em;
 }
 
-@media (max-width: 960px) {
-  .Container {
-    width: 100%;
-    border: none;
-  }
+.PostsCount {
+  display: flex;
+  border-collapse: collapse;
+}
+
+.Count {
+  width: fit-content;
+  padding: min(1rem, 2vw) min(1.5rem, 5vw);
+  font-weight: bold;
+  color:#4a96e5;
+  white-space: nowrap;
+  border-top: 0.0625em solid var(--primary-color);
+  border-right: 0.0625em solid var(--primary-color);
+  border-top-right-radius: 0.25em;
+}
+
+
+.BorderBottom {
+  flex: 1;
+  margin-left: -0.0625em;
+  margin-bottom: -0.125em;
+  border-bottom: 0.0625em solid var(--primary-color);
+  border-bottom-left-radius: 0.25em;
 }

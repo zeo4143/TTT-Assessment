@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./Posts.module.css";
 import { AiOutlineLike } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function Posts({ postDetails }) {
   //Converting Views to k & Ms
@@ -31,12 +32,13 @@ export default function Posts({ postDetails }) {
       <div className={Styles.Body}>
         <div className={Styles.Header}>
           <h3 className={Styles.Title}>{postDetails?.title}</h3>
-          <button className={Styles.Like}>
+          <span className={Styles.Like}>
             <AiOutlineLike className="Likes" />
-          </button>
+          </span>
         </div>
         <div className={Styles.Content}>
-          <p>{postDetails?.content}</p>
+          <p className={Styles.ContentText}>{postDetails?.content}</p>
+          <Link to={`/post/${postDetails?.id}`} state={{data : postDetails}}>...<small>Show More</small></Link>
         </div>
         <div className={Styles.Footer}>
           <div className={Styles.PostedBy}>

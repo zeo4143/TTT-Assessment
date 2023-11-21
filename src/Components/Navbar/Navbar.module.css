@@ -25,15 +25,6 @@
   color: white;
 }
 
-.navButton {
-  padding: 0.2em 0.5em;
-  background-color: var(--secondary-color);
-  font-weight: bold;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-}
-
 .img {
   padding: 0.5rem 1.05vw;
   height: inherit;

@@ -20,8 +20,37 @@ h1 {
   font-size: min(5vw, 1.25rem);
 }
 
+h2 {
+  font-size: clamp(1em, 3em, 2.5vw);
+}
+
 h2, h3 {
   font-weight: bold;
 }
+
+a {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #64c5d9;
+}
+
+a:hover {
+  color: #4a96e5;
+}
+
+button {
+  padding: 0.5em 0.7em;
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 
